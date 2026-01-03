@@ -1,4 +1,3 @@
-
 //go:generate go run -mod=mod github.com/google/wire/cmd/wire
 //go:build !wireinject
 
@@ -17,7 +16,6 @@ import (
 import (
 	_ "go.uber.org/automaxprocs"
 )
-
 
 func wireApp(confServer *conf.Server, confData *conf.Data, logger log.Logger) (*kratos.App, func(), error) {
 	dataData, cleanup, err := data.NewData(confData, logger)

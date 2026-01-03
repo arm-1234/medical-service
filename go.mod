@@ -3,7 +3,7 @@ module github.com/arm-1234/medical-service
 go 1.24.0
 
 require (
-	github.com/arm-1234/common-protos v0.0.0-20251224180332-57191015e4aa
+	github.com/arm-1234/common-protos v1.0.3
 	github.com/go-kratos/kratos/v2 v2.9.2
 	github.com/google/uuid v1.6.0
 	github.com/google/wire v0.7.0

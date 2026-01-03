@@ -1,6 +1,6 @@
 # Medical Service
 
-Healthcare management microservice built with Go Kratos, featuring patient management, appointments, prescriptions, and medical records with full OpenTelemetry observability.
+Healthcare management microservice built with Go Kratos, featuring patient management, appointments, prescriptions, and medical records
 
 ## 🚀 Quick Start
 
@@ -27,11 +27,9 @@ make run
 ### Technical Features
 - ✅ Clean Architecture (Service → Handler → Repository)
 - ✅ OpenTelemetry distributed tracing
-- ✅ Context-aware structured logging
 - ✅ Protocol Buffers (gRPC + HTTP)
 - ✅ Wire dependency injection
 - ✅ GORM with MySQL
-- ✅ Auto-generated APIs from protos
 
 ## 📦 Tech Stack
 
@@ -101,9 +99,6 @@ curl -X POST http://localhost:8000/v1/medical/appointments \
     "reason_for_visit": "Regular checkup"
   }'
 ```
-
-Full API docs: [common-protos](https://github.com/arm-1234/common-protos)
-
 ## 💻 Development
 
 ```bash
@@ -162,25 +157,3 @@ Layer     Logic       Access
 - **Service** - gRPC/HTTP endpoints, request validation, tracing entry
 - **Handler** - Business logic, validation, orchestration
 - **Repository** - Data access, GORM operations, entity mapping
-
-## 📝 Key Files
-
-- `OTEL_IMPLEMENTATION.md` - OpenTelemetry implementation details
-- `CODE_REVIEW.md` - Standards and best practices
-- [common-protos](https://github.com/arm-1234/common-protos) - API contracts
-
-## 🤝 Contributing
-
-1. Fork repository
-2. Create feature branch
-3. Follow existing patterns (check CODE_REVIEW.md)
-4. Run `make check` before commit
-5. Submit PR
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE)
-
----
-
-**Built with Go + Kratos + OpenTelemetry**

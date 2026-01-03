@@ -3,7 +3,7 @@ module github.com/arm-1234/medical-service
 go 1.24.0
 
 require (
-	github.com/arm-1234/common-protos v0.0.0-00010101000000-000000000000
+	github.com/arm-1234/common-protos v0.0.0-20251224180332-57191015e4aa
 	github.com/go-kratos/kratos/v2 v2.9.2
 	github.com/google/uuid v1.6.0
 	github.com/google/wire v0.7.0
@@ -38,5 +38,3 @@ require (
 	google.golang.org/grpc v1.77.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace github.com/arm-1234/common-protos => ../common-protos

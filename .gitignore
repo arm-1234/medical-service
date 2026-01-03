@@ -38,7 +38,6 @@ bin/
 *.swp
 
 # Generated files
-wire_gen.go
 coverage.out
 coverage.html
 
